@@ -6,13 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enfoque</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <!-- Inicio header y nav -->
+    <header>
+        <nav>
+            <div class="container-logo">
+                <a href="#">
+                    <img src="./img/logo.jpg" class="logo" id="top" alt="logo">
+                </a>
+            </div>
+            <ul class="links-nav">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#galery">Galería</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <button class="ham" type="button">
+                <span class="br-1"></span>
+                <span class="br-2"></span>
+                <span class="br-3"></span>
+            </button>
+        </nav>
+    </header>
+    <!-- Fin header y nav -->
 
-
-    <script src="./js/main.js"></script>
+    <main>
+        <!-- Inicio Banner typewriting -->
+        <section id="home" class="home">
+            <div class="banner-content">
+                <div class="content">
+                    <h1>Ignacio Scalise<br><span class="typewrite" data-loop="yes" data-speed="100" data-delay="2000"
+                            data-words='["Fotógrafo", "Realizador audiovisual", "Editor de video"]'></span></h1>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-behance-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Banner typewriting -->
+        <script src="./js/main.js"></script>
+        <script src="./js/menu.js"></script>
+        <!--Typewriting-->
+        <script src="./js/typewriting-master/typewriting.js"></script>
 </body>
 
 </html>

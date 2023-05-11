@@ -25,6 +25,14 @@ body {
 }
 
 
+.heading{
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+
 
 /*HEADER*/
 header {
@@ -119,7 +127,7 @@ nav {
 .content h1 {
     font-size    : 2rem;
     margin-bottom: 2rem;
-    line-height  : 1.3;
+    line-height  : 1.6;
     color        : var(--light-color);
 }
 
@@ -139,6 +147,51 @@ nav {
 
 .social-links li a:hover {
     opacity: 0.6;
+}
+
+/*GALERÍA*/
+
+/*Galería lightbox*/
+
+.container-gallery{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 2rem;
+    margin-bottom: 3rem;
+    background     : linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/banner1.jpg) no-repeat fixed center;
+}
+
+.single-img{
+    width: 15rem;
+    height: 18rem;
+    margin-bottom: 2rem;
+    border: .3rem solid var(--light-color);
+    border-radius: 2rem 0 2rem 0;
+    background: var(--light-color);
+}
+
+.single-img img{
+    width: 14.5rem;
+    height: 17.3rem;
+    border-radius: 2rem 0 2rem 0;
+    filter: saturate(0);
+    object-fit: cover;
+}
+
+
+
+/*FOOTER*/
+
+footer{
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+.developed{
+    width: 12rem;
+    height: 4rem;
 }
 
 

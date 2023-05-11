@@ -25,11 +25,11 @@ body {
 }
 
 
-.heading{
-    font-size: 2rem;
-    text-align: center;
+.heading {
+    font-size     : 2rem;
+    text-align    : center;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom : 2rem;
 }
 
 
@@ -153,48 +153,77 @@ nav {
 
 /*Galería lightbox*/
 
-.container-gallery{
-    display: flex;
+.container-gallery {
+    display        : flex;
     justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem 2rem;
-    margin-bottom: 3rem;
+    align-items    : center;
+    flex-wrap      : wrap;
+    padding        : 2rem 2rem;
+    margin-bottom  : 3rem;
     background     : linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/banner1.jpg) no-repeat fixed center;
 }
 
-.single-img{
-    width: 15rem;
-    height: 18rem;
+.single-img {
+    width        : 15rem;
+    height       : 18rem;
     margin-bottom: 2rem;
-    border: .3rem solid var(--light-color);
+    border       : .3rem solid var(--light-color);
     border-radius: 2rem 0 2rem 0;
-    background: var(--light-color);
+    background   : var(--light-color);
 }
 
-.single-img img{
-    width: 14.5rem;
-    height: 17.3rem;
+.single-img img {
+    width        : 14.5rem;
+    height       : 17.3rem;
     border-radius: 2rem 0 2rem 0;
-    filter: saturate(0);
-    object-fit: cover;
+    filter       : saturate(0);
+    object-fit   : cover;
 }
 
 
 
 /*FOOTER*/
 
-footer{
-    background: var(--dark-color);
-    color: var(--light-color);
+footer {
+    padding-top    : 3rem;
+    padding-bottom : 3rem;
+    background     : var(--dark-color);
+    color          : var(--light-color);
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    gap            : 1.5rem;
 }
 
-.developed{
-    width: 12rem;
+footer div .contact-socials {
+    display: flex;
+    gap    : 1rem;
+}
+
+.contact-socials li a {
+    background-color: var(--light-color);
+    color           : var(--dark-color);
+    padding         : .4rem;
+    border-radius   : .3rem;
+    box-shadow      : 0 0 6px 5px rgba(0, 0, 0, 0.6);
+    transition      : var(--transition);
+}
+
+.contact-socials li a:hover {
+    opacity: 0.6;
+}
+
+footer p {
+    text-align: center;
+}
+
+.developed {
+    width : 12rem;
     height: 4rem;
+    border-radius: .3rem;
+    border: .1rem solid var(--light-color);
 }
-
-
 
 
 /*-----------------------------------------------------------------*/

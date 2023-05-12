@@ -139,8 +139,9 @@ nav {
 }
 
 .social-links li a {
-    font-size       : 1.6rem;
+    font-size       : 2rem;
     background-color: var(--light-color);
+    color           : var(--dark-color);
     padding         : .5rem;
     border-radius   : .3rem;
     box-shadow      : 0 0 6px 5px rgba(0, 0, 0, 0.6);
@@ -315,7 +316,7 @@ form {
 }
 
 .input:hover {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .btn-form:hover {
@@ -324,6 +325,26 @@ form {
     cursor    : pointer;
     font-size : 1.4rem;
 }
+
+.contact-form-response {
+    width        : 50%;
+    font-size    : 1.5rem;
+    padding      : .5rem;
+    border-radius: .5rem;
+    text-align   : center;
+    margin       : 2rem auto;
+    color        : var(--light-color);
+    background   : var(--dark-color);
+}
+
+.contact-form-loader {
+    text-align: center;
+}
+
+.none {
+    display: none;
+}
+
 
 /*FOOTER*/
 
@@ -345,7 +366,7 @@ footer div .contact-socials {
 }
 
 .contact-socials li a {
-    font-size       : 1.6rem;
+    font-size       : 2rem;
     background-color: var(--light-color);
     color           : var(--dark-color);
     padding         : .6rem;

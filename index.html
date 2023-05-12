@@ -15,10 +15,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Loader form -->
+    <link rel="stylesheet" href="./css/loader.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!--lightbox-->
     <link rel="stylesheet" href="simplelightbox-master/dist/simple-lightbox.css">
+
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -288,23 +291,38 @@
                 </div>
             </div>
             <!--Fin Slider Swipper Js-->
-
         </section>
         <!-- Fin sección Nosotros -->
 
         <!-- Inicio sección Contacto -->
         <section class="contact" id="contact">
-
-
             <h2 class="heading">Contacto</h2>
-            <form action="">
-                <input type="text" name="text" class="input" placeholder="Nombre y Apellido" required>
-                <input type="number" name="number" class="input" placeholder="Teléfono" required>
+
+            <form action="https://formspree.io/f/xnqyrpyz" method="POST" class="contact-form">
+                <input type="text" name="nombre" class="input" placeholder="Nombre y Apellido" required>
+                <input type="number" name="telefono" class="input" placeholder="Teléfono" required>
                 <input type="email" name="email" class="input" placeholder="Email" required>
-                <textarea name="" id="" class="input"  rows="6" placeholder="Ingrese su consulta" required></textarea>
+                <textarea name="message" class="input" rows="6" placeholder="Ingrese su consulta" required></textarea>
                 <button type="submit" class="input btn-form">Enviar</button>
                 <button type="reset" class="input btn-form">Borrar</button>
             </form>
+
+            <div class="contact-form-loader none">
+                <div class="sk-cube-grid">
+                    <div class="sk-cube sk-cube1"></div>
+                    <div class="sk-cube sk-cube2"></div>
+                    <div class="sk-cube sk-cube3"></div>
+                    <div class="sk-cube sk-cube4"></div>
+                    <div class="sk-cube sk-cube5"></div>
+                    <div class="sk-cube sk-cube6"></div>
+                    <div class="sk-cube sk-cube7"></div>
+                    <div class="sk-cube sk-cube8"></div>
+                    <div class="sk-cube sk-cube9"></div>
+                </div>
+            </div>
+            <div class="contact-form-response none">
+                <p>Tu consulta ha sido enviada ✔</p>
+            </div>
 
         </section>
         <!-- Fin sección Contacto -->

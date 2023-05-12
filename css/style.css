@@ -17,6 +17,8 @@
 }
 
 html {
+    font-size      : 62.5%;
+    overflow-x     : hidden;
     scroll-behavior: smooth;
 }
 
@@ -24,9 +26,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
 .heading {
-    font-size     : 2rem;
+    font-size     : 3.5rem;
     text-align    : center;
     text-transform: uppercase;
     margin-bottom : 2rem;
@@ -47,11 +48,11 @@ nav {
 }
 
 .logo {
-    width         : 6rem;
-    height        : 4.5rem;
+    width         : 8rem;
+    height        : 6.5rem;
     margin-left   : 1rem;
-    padding-top   : .5rem;
-    padding-bottom: .5rem;
+    padding-top   : 1rem;
+    padding-bottom: 1rem;
 }
 
 .ham {
@@ -85,7 +86,7 @@ nav {
 
 
 .links-nav li a {
-    font-size  : 1rem;
+    font-size  : 1.6rem;
     font-weight: 800;
     color      : var(--light-color);
 }
@@ -125,7 +126,7 @@ nav {
 }
 
 .content h1 {
-    font-size    : 2rem;
+    font-size    : 3rem;
     margin-bottom: 2rem;
     line-height  : 1.6;
     color        : var(--light-color);
@@ -138,6 +139,7 @@ nav {
 }
 
 .social-links li a {
+    font-size       : 1.6rem;
     background-color: var(--light-color);
     padding         : .5rem;
     border-radius   : .3rem;
@@ -180,31 +182,71 @@ nav {
     object-fit   : cover;
 }
 
+/*NOSOTROS*/
+
+.about {
+    padding: 2rem 7%;
+}
+
+.about .row {
+    display    : flex;
+    align-items: center;
+    flex-wrap  : wrap;
+    background : var(--dark-color);
+
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row .image img {
+    width: 100%;
+    filter: saturate(0);
+}
+
+.about .row .text {
+    flex   : 1 1 45rem;
+    padding: 2rem;
+}
+
+
+.about .row .text p {
+    font-size  : 1.4rem;
+    font-weight: 300;
+    color      : var(--light-color);
+    padding    : 1rem 0;
+    line-height: 1.8;
+}
+
+
+
 
 
 /*FOOTER*/
 
 footer {
-    padding-top    : 3rem;
-    padding-bottom : 3rem;
+    padding-top    : 5rem;
+    padding-bottom : 5rem;
     background     : var(--dark-color);
     color          : var(--light-color);
     display        : flex;
     justify-content: center;
     align-items    : center;
     flex-direction : column;
-    gap            : 1.5rem;
+    gap            : 2.5rem;
 }
 
 footer div .contact-socials {
     display: flex;
-    gap    : 1rem;
+    gap    : 1.3rem;
 }
 
 .contact-socials li a {
+    font-size       : 1.6rem;
     background-color: var(--light-color);
     color           : var(--dark-color);
-    padding         : .4rem;
+    padding         : .6rem;
     border-radius   : .3rem;
     box-shadow      : 0 0 6px 5px rgba(0, 0, 0, 0.6);
     transition      : var(--transition);
@@ -215,14 +257,15 @@ footer div .contact-socials {
 }
 
 footer p {
+    font-size : 1.6rem;
     text-align: center;
 }
 
 .developed {
-    width : 12rem;
-    height: 4rem;
+    width        : 20rem;
+    height       : 6rem;
     border-radius: .3rem;
-    border: .1rem solid var(--light-color);
+    border       : .1rem solid var(--light-color);
 }
 
 
@@ -230,8 +273,15 @@ footer p {
 
 /*------MEDIA QUERIES-------*/
 
-
 @media screen and (max-width:990px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .about {
+        padding: 2rem;
+    }
 
     .ham {
         display   : block;
@@ -296,4 +346,29 @@ footer p {
 
 .br-3.animado {
     transform: rotate(45deg) translate(-10px, -8px);
+}
+
+@media screen and (max-width:800px) {
+
+    .content {
+        width      : 90%;
+        margin-left: 1rem;
+    }
+
+}
+
+@media screen and (max-width:530px) {
+
+    .banner-content {
+        justify-content: center;
+        align-items    : center;
+        height         : 75vh;
+    }
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
 }

@@ -201,7 +201,7 @@ nav {
 }
 
 .about .row .image img {
-    width: 100%;
+    width : 100%;
     filter: saturate(0);
 }
 
@@ -219,8 +219,72 @@ nav {
     line-height: 1.8;
 }
 
+/*Slider Swipper Js*/
 
+#container {
+    max-width: 119rem;
+    margin   : 3rem auto;
+}
 
+.swiper {
+    width : 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width          : 31rem;
+    height         : 25rem;
+    position       : relative;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.swiper-slide img {
+    display: block;
+    width  : 31rem;
+    height : 25rem;
+    filter : saturate(0);
+}
+
+.autoplay-progress {
+    position       : absolute;
+    right          : 1rem;
+    bottom         : 1rem;
+    z-index        : 10;
+    width          : 4rem;
+    height         : 4rem;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    font-weight    : bold;
+    color          : var(--dark-color);
+}
+
+.autoplay-progress svg {
+    --progress       : 0;
+    position         : absolute;
+    left             : 0;
+    top              : 0;
+    z-index          : 10;
+    width            : 100%;
+    height           : 100%;
+    stroke-width     : .4rem;
+    stroke           : var(--dark-color);
+    fill             : none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray : 125.6;
+    transform        : rotate(-90deg);
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--light-color);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--dark-color);
+}
 
 
 /*FOOTER*/
@@ -363,6 +427,21 @@ footer p {
         justify-content: center;
         align-items    : center;
         height         : 75vh;
+    }
+
+    .swiper-slide {
+        width : 35rem;
+        height: 20rem;
+    }
+
+    .swiper-slide img {
+        width : 35rem;
+        height: 20rem;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        opacity: 0;
     }
 }
 

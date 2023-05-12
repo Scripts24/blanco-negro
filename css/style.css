@@ -287,6 +287,44 @@ nav {
 }
 
 
+/*CONTACTO*/
+
+form {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-direction : column;
+    gap            : 2rem;
+    margin-bottom  : 3rem;
+}
+
+.input {
+    border          : none;
+    border-radius   : 15px;
+    padding         : 15px;
+    background-color: #faf8f8;
+    box-shadow      : 6px 6px 12px #ffffff,
+        -6px -6px 12px #c5c5c5;
+    font-weight: bold;
+    width      : 60%;
+}
+
+.input:focus {
+    outline-color: var(--light-color);
+    place-content: "Enter your message!";
+}
+
+.input:hover {
+    font-size: 1rem;
+}
+
+.btn-form:hover {
+    color     : var(--light-color);
+    background: var(--dark-color);
+    cursor    : pointer;
+    font-size : 1.4rem;
+}
+
 /*FOOTER*/
 
 footer {

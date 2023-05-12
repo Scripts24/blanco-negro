@@ -16,7 +16,7 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!--lightbox-->
     <link rel="stylesheet" href="simplelightbox-master/dist/simple-lightbox.css">
     <!-- Hoja de estilos -->
@@ -245,49 +245,49 @@
                 </div>
             </div>
             <!--Slider Swipper Js-->
-        <div id="container">
-            <div class="swiper mySwiper ">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./img/slider/s1.jpg">
+            <div id="container">
+                <div class="swiper mySwiper ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/slider/s1.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider/s2.jpg">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/slider/s3.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider/s4.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider/s5.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider/s6.jpg">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/slider/s7.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider/s8.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider/s9.jpg">
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="./img/slider/s2.jpg">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span></span>
                     </div>
-                    <div class="swiper-slide ">
-                        <img src="./img/slider/s3.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/slider/s4.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/slider/s5.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/slider/s6.jpg">
-                    </div>
-                    <div class="swiper-slide ">
-                        <img src="./img/slider/s7.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/slider/s8.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/slider/s9.jpg">
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-                <div class="autoplay-progress">
-                    <svg viewBox="0 0 48 48">
-                        <circle cx="24" cy="24" r="20"></circle>
-                    </svg>
-                    <span></span>
                 </div>
             </div>
-        </div>
-        <!--Fin Slider Swipper Js-->
+            <!--Fin Slider Swipper Js-->
 
         </section>
         <!-- Fin sección Nosotros -->
@@ -295,7 +295,16 @@
         <!-- Inicio sección Contacto -->
         <section class="contact" id="contact">
 
+
             <h2 class="heading">Contacto</h2>
+            <form action="">
+                <input type="text" name="text" class="input" placeholder="Nombre y Apellido" required>
+                <input type="number" name="number" class="input" placeholder="Teléfono" required>
+                <input type="email" name="email" class="input" placeholder="Email" required>
+                <textarea name="" id="" class="input"  rows="6" placeholder="Ingrese su consulta" required></textarea>
+                <button type="submit" class="input btn-form">Enviar</button>
+                <button type="reset" class="input btn-form">Borrar</button>
+            </form>
 
         </section>
         <!-- Fin sección Contacto -->

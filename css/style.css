@@ -33,6 +33,25 @@ body {
     margin-bottom : 2rem;
 }
 
+/* button down and title -reusable */
+.btn-down{
+    font-size: 2rem;
+    display: inline-block;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+    padding: 0 .5rem ;
+    transition: var(--transition);
+    color: var(--light-color);
+    background: var(--dark-color);
+}
+.btn-down:hover{
+    opacity: 0.8;
+    transform: translateY(5px);
+}
+.btn-down-white{
+    color: var(--dark-color);
+}
+
 
 /*HEADER*/
 header {
@@ -306,6 +325,7 @@ nav {
     height : 25rem;
     filter : saturate(0);
 }
+
 
 .autoplay-progress {
     position       : absolute;

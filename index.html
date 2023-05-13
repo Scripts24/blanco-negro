@@ -37,11 +37,11 @@
                 </a>
             </div>
             <ul class="links-nav">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#gallery">Galería</a></li>
-                <li><a href="#about">Nosotros</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li class="btn"><a href="#home">Inicio</a></li>
+                <li class="btn"><a href="#services">Servicios</a></li>
+                <li class="btn"><a href="#gallery">Galería</a></li>
+                <li class="btn"><a href="#about">Nosotros</a></li>
+                <li class="btn"><a href="#contact">Contacto</a></li>
             </ul>
             <button class="ham" type="button">
                 <span class="br-1"></span>
@@ -49,6 +49,10 @@
                 <span class="br-3"></span>
             </button>
         </nav>
+        <!-- Barra de progreso -->
+        <div class="progress">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
     </header>
     <!-- Fin header y nav -->
     <!-- Inicio contenido principal -->
@@ -158,9 +162,9 @@
 
             </div>
             <!-- Fin cards-->
-            <a href ="#gallery" class ="btn-down">
-                <i class = "fas fa-chevron-down"></i>
-            </a>                
+            <a href="#gallery" class="btn-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </section>
         <!-- Fin sección servicios -->
 
@@ -292,13 +296,14 @@
                             <img src="./img/galeria/g23.jpg">
                         </div>
                     </a>
-                    
+
                 </div>
-                <a href = "#about" class = "btn-down">
-                    <i class = "fas fa-chevron-down"></i>
-                </a> 
+                <a href="#about" class="btn-down">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
             </div>
             <!-- Fin galería lightbox-->
+
         </section>
         <!-- Fin sección galería -->
 
@@ -322,8 +327,6 @@
                     </p>
                 </div>
             </div>
-
-           
 
             <!--Slider Swipper Js-->
             <div id="container">
@@ -368,13 +371,14 @@
                     </div>
                 </div>
             </div>
-            
+
             <!--Fin Slider Swipper Js-->
-            <a href ="#contact" class ="btn-down">
-                <i class = "fas fa-chevron-down"></i>
-            </a>    
+
+            <a href="#contact" class="btn-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </section>
-        
+
         <!-- Fin sección Nosotros -->
 
         <!-- Inicio sección Contacto -->
@@ -464,6 +468,7 @@
             duration: 2000,
         });
     </script>
+    <script src="./js/progressBar.js"></script>
 
 </body>
 

@@ -27,12 +27,11 @@ body {
 }
 
 .heading {
-    font-size     : 3.5rem;
+    font-size     : 3rem;
     text-align    : center;
     text-transform: uppercase;
     margin-bottom : 2rem;
 }
-
 
 
 /*HEADER*/
@@ -152,9 +151,69 @@ nav {
     opacity: 0.6;
 }
 
+/*SERVICIOS*/
+
+.services p {
+    text-align : center;
+    font-weight: 500;
+    font-size  : 1.5rem;
+}
+
+.container-cards {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+    flex-wrap      : wrap;
+    gap            : 3rem;
+    margin         : 2rem 10rem;
+}
+
+.container-cards .cards {
+    position     : relative;
+    width        : 20rem;
+    height       : 30rem;
+    border-radius: 2rem;
+    background   : #e0e0e0;
+    box-shadow   : 20px 20px 40px #bebebe,
+        -20px -20px 40px #ffffff;
+}
+
+.container-cards .cards:hover {
+    transform: scale(1.1);
+    cursor   : pointer;
+}
+
+.container-cards .cards img {
+    width        : 20rem;
+    height       : 30rem;
+    filter       : saturate(0);
+    border-radius: 2rem;
+}
+
+.container-cards .cards img:hover {
+    filter: saturate(1);
+}
+
+.container-cards .text-card {
+    position     : absolute;
+    bottom       : 0;
+    left         : 0;
+    right        : 0;
+    color        : var(--light-color);
+    font-size    : 1.5rem;
+    text-align   : center;
+    padding      : .5rem;
+    background   : rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 2rem 2rem;
+}
+
 /*GALERÍA*/
 
 /*Galería lightbox*/
+
+.gallery {
+    padding: 2rem 7%;
+}
 
 .container-gallery {
     display        : flex;
@@ -345,7 +404,6 @@ form {
     display: none;
 }
 
-
 /*FOOTER*/
 
 footer {
@@ -402,7 +460,8 @@ footer p {
         font-size: 55%;
     }
 
-    .about {
+    .about,
+    .gallery {
         padding: 2rem;
     }
 

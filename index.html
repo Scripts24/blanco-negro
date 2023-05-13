@@ -37,17 +37,15 @@
                 </a>
             </div>
             <ul class="links-nav">
-                <li class="btn"><a href="#home">Inicio</a></li>
-                <li class="btn"><a href="#services">Servicios</a></li>
-                <li class="btn"><a href="#gallery">Galería</a></li>
-                <li class="btn"><a href="#about">Nosotros</a></li>
-                <li class="btn"><a href="#contact">Contacto</a></li>
+                <li class="links"><a href="#home">Inicio</a></li>
+                <li class="links"><a href="#services">Servicios</a></li>
+                <li class="links"><a href="#gallery">Galería</a></li>
+                <li class="links"><a href="#about">Nosotros</a></li>
+                <li class="links"><a href="#contact">Contacto</a></li>
             </ul>
-            <button class="ham" type="button">
-                <span class="br-1"></span>
-                <span class="br-2"></span>
-                <span class="br-3"></span>
-            </button>
+            <div class="hamb">
+                <img src="./img/menu.png" id="hamb">
+            </div>
         </nav>
         <!-- Barra de progreso -->
         <div class="progress">
@@ -451,13 +449,16 @@
         <img class="developed" src="./img/developed.png" alt="logo desarrollo web">
     </footer>
     <!-- Fin Footer-->
+    
     <!--lightbox-->
     <script src="simplelightbox-master/dist/simple-lightbox.js"></script>
     <script src="./js/main.js"></script>
+    <!--Menú activo-->
+    <script src="./js/active.js"></script>
+    <!--Menú responsive-->
     <script src="./js/menu.js"></script>
     <!--Typewriting-->
     <script src="./js/typewriting-master/typewriting.js"></script>
-    <!--Swiper js-->
     <!--Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
@@ -468,6 +469,7 @@
             duration: 2000,
         });
     </script>
+    
     <script src="./js/progressBar.js"></script>
 
 </body>

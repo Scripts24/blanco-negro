@@ -1,23 +1,42 @@
-/* Activa menú hamburguesa*/
 
-const ham = document.querySelector('.ham');
-const enlaces = document.querySelector('.links-nav');
-const barras = document.querySelectorAll('.ham span');
+const enlaces = document.getElementsByClassName("links-nav")[0]
+const hamburguesa = document.getElementsByClassName("hamb")[0]
+const menuHamburguesa = document.getElementById("hamb")
 
-ham.addEventListener('click', () => {
-    enlaces.classList.toggle('activado');
-    barras.forEach(child =>  {child.classList.toggle('animado')});
-});
+let open = false
 
-
-/*Indica página activa*/
-
-const seleccionado = location.href;
-const menu_item = document.querySelectorAll('a');
-const menu_length = menu_item.length;
-
-for (let i = 0; i < menu_length; i++){
-    if(menu_item[i].href === seleccionado){
-        menu_item[i].className = "active"
-    }
+const toggleMenu = () => {
+    enlaces.classList.toggle("links-nav2")
+    enlaces.style.transition = "transform 0.5s ease-in-out"
 }
+
+hamburguesa.addEventListener("click", function () {
+    toggleMenu()
+
+    if (document.querySelector("links-nav.links-nav2")) {
+        open = true
+    } else {
+        open = false
+    }
+})
+
+window.addEventListener("click", function (e) {
+    if (open) {
+        if (e.target !== menuHamburguesa) {
+            toggleMenu()
+            open = false
+        }
+    }
+})
+
+window.addEventListener("resize", function () {
+    if (screen.width > 800) {
+        if (open) {
+            toggleMenu()
+            enlaces.style.transition = "none"
+            open = false
+        }
+    }
+})
+
+

@@ -166,134 +166,17 @@
         </section>
         <!-- Fin sección servicios -->
 
-        <!-- Inicio sección Galería lightbox  -->
+        <!-- Inicio sección Galería -->
         <section class="gallery" id="gallery">
 
             <h2 class="heading">Galería</h2>
 
             <!-- Inicio galería lightbox-->
 
-            <div class="container-lightbox">
-                <div class="container-gallery">
-                    <a href="./img/galeria/g1.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g1.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g2.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g2.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g3.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g3.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g5.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g5.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g6.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g6.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g4.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g4.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g7.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g7.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g8.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g8.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g9.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g9.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g11.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g11.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g12.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g12.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g13.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g13.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g14.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g14.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g16.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g16.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g17.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g17.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g18.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g18.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g19.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g19.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g20.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g20.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g10.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g10.jpg">
-                        </div>
-                    </a>
-
-                    <a href="./img/galeria/g23.jpg">
-                        <div class="single-img">
-                            <img src="./img/galeria/g23.jpg">
-                        </div>
-                    </a>
+            <div class="container-lightbox" id="container-lightbox">
+                <div class="container-gallery" id="container-gallery">
+                
+                    <!-- Se rellena con js-->
 
                 </div>
                 <a href="#about" class="btn-down">
@@ -383,9 +266,9 @@
         <section class="contact" id="contact">
             <h2 class="heading">Contacto</h2>
 
-            <form action="https://formspree.io/f/xnqyrpyz" method="POST" class="contact-form">
-                <input type="text" name="nombre" class="input" placeholder="Nombre y Apellido" required>
-                <input type="number" name="telefono" class="input" placeholder="Teléfono" required>
+            <form class="contact-form">
+                <input type="text" name="name" class="input" placeholder="Nombre y Apellido" required>
+                <input type="number" name="phone" class="input" placeholder="Teléfono" required>
                 <input type="email" name="email" class="input" placeholder="Email" required>
                 <textarea name="message" class="input" rows="6" placeholder="Ingrese su consulta" required></textarea>
                 <button type="submit" class="input btn-form">Enviar</button>
@@ -452,6 +335,9 @@
     
     <!--lightbox-->
     <script src="simplelightbox-master/dist/simple-lightbox.js"></script>
+    <!--Archivo Galería-->
+    <script src="./js/data.js"></script>
+    <!--Varios-->
     <script src="./js/main.js"></script>
     <!--Menú activo-->
     <script src="./js/active.js"></script>
@@ -469,7 +355,6 @@
             duration: 2000,
         });
     </script>
-    
     <script src="./js/progressBar.js"></script>
 
 </body>

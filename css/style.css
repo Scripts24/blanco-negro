@@ -34,6 +34,7 @@ body {
 }
 
 /* Button down  */
+
 .btn-down {
     font-size    : 2rem;
     display      : inline-block;
@@ -81,9 +82,9 @@ nav {
 }
 
 .logo {
-    width         : 8rem;
-    height        : 6.5rem;
-    margin-left   : 1rem;
+    width         : 10rem;
+    height        : 8.5rem;
+    margin-left   : 1.5rem;
     padding-top   : 1rem;
     padding-bottom: 1rem;
 }
@@ -91,7 +92,7 @@ nav {
 .hamb {
     width     : 70px;
     text-align: center;
-    display: none;
+    display   : none;
 }
 
 .hamb img {
@@ -119,18 +120,16 @@ nav {
 }
 
 .active {
-    border: 2px solid var(--light-color);
-    padding: .5rem;
+    border    : 2px solid var(--light-color);
+    padding   : .5rem;
     transition: var(--transition);
 }
 
 .links-nav a:hover {
-    margin-right: 2rem;
-    background: var(--light-color);
-    color: var(--dark-color);
-    padding: .5rem;
-    border-radius: .3rem;
-    transition: var(--transition);
+    background   : var(--light-color);
+    color        : var(--dark-color);
+    padding      : .5rem;
+    transition   : var(--transition);
 }
 
 
@@ -287,7 +286,6 @@ nav {
     align-items: center;
     flex-wrap  : wrap;
     background : var(--dark-color);
-
 }
 
 .about .row .image {
@@ -340,7 +338,6 @@ nav {
     height : 25rem;
     filter : saturate(0);
 }
-
 
 .autoplay-progress {
     position       : absolute;
@@ -517,7 +514,7 @@ footer p {
         position       : fixed;
         background     : var(--dark-color);
         left           : 0;
-        top            : 11.5rem;
+        top            : 13.4rem;
         width          : 60%;
         height         : 92vh;
         display        : flex;
@@ -543,9 +540,7 @@ footer p {
 @media screen and (max-width:530px) {
 
     .banner-content {
-        justify-content: center;
-        align-items    : center;
-        height         : 75vh;
+        height: 85vh;
     }
 
     .swiper-slide {

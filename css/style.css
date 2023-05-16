@@ -339,6 +339,10 @@ nav {
     filter : saturate(0);
 }
 
+.swiper-slide img:hover{
+    filter: saturate(1);
+}
+
 .autoplay-progress {
     position       : absolute;
     right          : 1rem;

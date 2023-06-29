@@ -70,3 +70,4 @@ document.addEventListener('DOMContentLoaded', init)
 function init() {
   document.querySelectorAll('.typewrite').forEach(e => new typeWriting(e));
 }
+

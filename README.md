@@ -21,12 +21,6 @@
 
 ---
 
-### Proyecto finalizado
-
-![Vista Previa](./img/preview.gif)
-
----
-
 ### Realizado por Patricia Atanasoff
 
 `pato.atanasoff0815@gmail.com`
